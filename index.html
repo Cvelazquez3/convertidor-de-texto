@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Convertidor de texto</title>
+
+<!-- PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- DOCX -->
+<script src="https://unpkg.com/docx@8.0.3/build/index.js"></script>
+
+<!-- Guardar archivos -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app-card">
+
+<header>
+    <h1>Convertidor de texto</h1>
+    <p>Exporta tu texto a PDF, DOCX, RTF o TXT</p>
+</header>
+
+<main>
+
+        <div class="controls panel">
+                <button id="pdf-btn">PDF</button>
+                <button id="docx-btn">DOCX</button>
+                <button id="rtf-btn">RTF</button>
+                <button id="txt-btn" class="secondary">TXT</button>
+        </div>
+
+        <div class="panel">
+            <textarea id="input-text" placeholder="Escribe aquí..."></textarea>
+        </div>
+
+</main>
+
+</div>
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
